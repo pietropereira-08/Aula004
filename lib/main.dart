@@ -163,6 +163,46 @@ class TelaDashboard extends StatelessWidget {
                 ),
               ],
             ),
+            const SizedBox(height: 24.0),
+            const Text(
+              'Últimos Registros',
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+            ),
+            const SizedBox(height: 16.0),
+            Container(
+              padding: const EdgeInsets.all(16.0),
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(12),
+                border: Border.all(color: Colors.grey.shade300),
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  const Row(
+                    children: [
+                      Icon(Icons.list_alt, color: Colors.teal),
+                      SizedBox(width: 12),
+                      Text(
+                        'Ver histórico completo',
+                        style: TextStyle(
+                          fontSize: 15,
+                          fontWeight: FontWeight.w500,
+                        ),
+                      ),
+                    ],
+                  ),
+                  ElevatedButton(
+                    onPressed: () {},
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.teal,
+                      foregroundColor: Colors.white,
+                    ),
+                    child: const Text('Acessar'),
+                  ),
+                ],
+              ),
+            ),
           ],
         ),
       ),
